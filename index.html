@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reconstrucciones Autoencoder CIFAR-10</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      margin: 5px;
+    }
+    img {
+      margin: 10px 0;
+      border: 1px solid #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reconstrucciones desde Autoencoder (CIFAR-10)</h1>
+  <div id="container"></div>
+
+  <hr />
+  <h2>Comparación Visual</h2>
+  <p>Comparación entre imágenes ruidosas, reconstruidas y originales (primeras 5 muestras):</p>
+  <img src="comparacion_visual.png" alt="Comparación Visual" width="600" />
+
+  <h2>Gráfico de Pérdida</h2>
+  <p>Progreso de la pérdida durante el entrenamiento del autoencoder:</p>
+  <img src="grafico_perdida.png" alt="Pérdida durante el entrenamiento" width="600" />
+
+  <script src="script.js"></script>
+</body>
+</html>
